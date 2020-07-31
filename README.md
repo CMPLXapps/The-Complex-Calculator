@@ -4,3 +4,8 @@
 After downloading python, just run the file using it.
 
 Or use the web client: https://tcc-web-client.cmplx.repl.run
+
+All credits go to me, CMPLX, and the folks at the Python Software Foundation
+for ultimately facilitating my passion.
+
+And you, the community.
