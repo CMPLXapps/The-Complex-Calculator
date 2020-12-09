@@ -1,9 +1,6 @@
-# The-Complex-Calculator
-<New Repo> A free calculator app made in Python. Requires Python 3: https://www.python.org/downloads/
+# The Complex Calculator v4.0.0
 
-After downloading python, just run the file using it.
+Python 3 is required, download it <a href="https://www.python.org/downloads/">here</a>.
 
-All credits go to me, CMPLX, and everyone at the Python Software Foundation
-for ultimately facilitating my passion.
+## Changelog:
 
-And you, the community.
