@@ -24,7 +24,7 @@ the OS-Ambiguous Source Code and run `The-Complex-Calculator.py` , and it will r
 
 * Packaged with a graphing calculator
 
-* Available as a `.zip`  archive for Windows and a tarball for Linux as well as OS-Ambiguous Source Code
+* Available as a `.zip`  archive for Windows and a tarball for Linux, as well as OS-Ambiguous Source Code
 
 * More fleshed out and with more polish
 
