@@ -8,7 +8,7 @@ Python 3 is required, download it <a href="https://www.python.org/downloads/" ta
 
 This project is only officially available for Linux and Windows, although, on MacOS, you can just download
 
-the OS-Ambiguous Source Code and run `The-Complex-Calculator.py` , and it will run properly and work just as well.
+the OS-Ambiguous Source Code and run `tcc4.py` , and it will run properly and work just as well.
 
 ## Dependencies:
 
