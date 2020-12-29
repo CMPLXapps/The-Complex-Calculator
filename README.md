@@ -12,10 +12,6 @@ the OS-Ambiguous Source Code and run `tcc4.py` , and it will run properly and wo
 
 ## Dependencies:
 
-* PyGetWindow
-
-		pip install pygetwindow
-
 * Keyboard
 
 		pip install keyboard
