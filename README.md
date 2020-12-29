@@ -30,7 +30,7 @@ the OS-Ambiguous Source Code and run `tcc4.py` , and it will run properly and wo
 
 Linux:
 
-	> cd .../The-Complex-Calculator-v4.0.0-linuxmac/dist/
+	> cd .../The-Complex-Calculator-v4.0.0-linux/dist/
 	
 	> ./The-Complex-Calculator
 
