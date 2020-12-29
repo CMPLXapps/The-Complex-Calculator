@@ -36,4 +36,4 @@ Linux:
 
 Windows:
 
-	.../The-Complex-Calculator-v4.0.0/dist/The-Complex-Calculator.exe
+	.../The-Complex-Calculator-v4.0.0-win/dist/The-Complex-Calculator.exe
