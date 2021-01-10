@@ -1,7 +1,7 @@
 import time
 import sys
 sys.path.append('..')
-import com.cmplx.pymodules.base as comp
+from pytools import *
 import shutil
 def load():
 	comp.clear()

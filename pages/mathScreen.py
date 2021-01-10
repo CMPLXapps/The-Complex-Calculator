@@ -6,7 +6,7 @@ from resources import graph, processing
 from resources.style import fore, reset, formatting, back
 from resources.mathFunctions import *
 from resources.constantsContainer import *
-import com.cmplx.pymodels.base as comp
+from pytools import *
 import shutil
 def vars():
 	global terminalWidth, terminalHeight, hashFill
@@ -27,6 +27,7 @@ class load:
 		print(f'{fore.lightcyan}==Help==History==Graph==Back==Reload==Quit' + ('=' * (terminalWidth - 35)) + '(Type One)=='.center(terminalWidth) + reset.styling)
 	class help():
 		def all():
+			clear()
 			hashLine(2)
 			print(f'{hashFill}+----------------------------------------------------------------ESC to close--+{hashFill}')
 			print(f'{hashFill}|{reset.styling}    <   {fore.white}All{reset.styling}   Variables   Constants   Math   Statistics   Trigonometry   >    {fore.white}|{hashFill}')

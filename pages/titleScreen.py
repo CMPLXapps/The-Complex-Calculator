@@ -1,7 +1,7 @@
 import keyboard
 import sys
 sys.path.append('..')
-import com.cmplx.pymodules.base as comp
+from pytools import *
 import time
 import shutil
 def load():
