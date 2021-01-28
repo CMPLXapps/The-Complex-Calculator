@@ -1,5 +1,5 @@
 import json
-with open('config/var.json', 'r') as file:
+with open('cfg/var.json', 'r') as file:
 	varDossier = json.load(file)
 varDossier_old = varDossier.copy()
 def updateVarDossier():
@@ -166,26 +166,5 @@ class f_var:
 def save_variables():
 	updateVarDossier()
 	varDossier_old = varDossier.copy()
-	with open('config/var.json', 'w') as file:
+	with open('cfg/var.json', 'w') as file:
 		json.dump(varDossier, file, indent=4)
-edita = a_var()
-edit_a = a_var()
-ea = a_var()
-editb = b_var()
-edit_b = b_var()
-eb = b_var()
-editc = c_var()
-edit_c = c_var()
-ec = c_var()
-editd = d_var()
-edit_d = d_var()
-ed = d_var()
-edite = e_var()
-edit_e = e_var()
-ee = e_var()
-editf = f_var()
-edit_f = f_var()
-ef = f_var()
-svar = save_variables()
-save_variables = save_variables()
-sv = save_variables()

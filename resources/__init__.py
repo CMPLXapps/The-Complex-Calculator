@@ -1,1 +1,1 @@
-__all__ = ['mathFuncntions', 'constantsContainer', 'graph', 'style', 'processing']
+__all__ = ['mathFunctions',  'graph', 'style', 'processing']

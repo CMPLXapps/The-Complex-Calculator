@@ -1,7 +1,9 @@
-from constantsContainer import *
 import math as M
 import random as R
 import stat as S
+pi = 3.1415926535897932384626433832795028841971693993
+tau = 2 * pi
+eul = 2.7182818284590452353602874713527
 sqrt = lambda x: x ** (1 / 2)
 cbrt = lambda x: x ** (1 / 3)
 tsrt = lambda x: x ** (1 / 4)
@@ -37,8 +39,8 @@ def median(x):
 		return y
 def range(x):
 	x = CONVTOLIST(x)
-	lowest = 0
-	highest = 0
+	lowest = x[0]
+	highest = x[0]
 	for i in x:
 		i = abs(i)
 		highest -= i
@@ -48,24 +50,21 @@ def range(x):
 			lowest = i
 		if i > highest:
 			highest = i
-	RString = 'The lowest is ' + str(lowest) + ', and the highest is ' + str(highest)
-	difference = highest - lowest
-	return {"tag": "@DICT_RESPONSE~ $", "print": RString, "valid": True, "numbers": {"diff": difference, "interval": [lowest, highest]}}
+	return lowest - highest
 def wdiv(x, n):
 	y = x
 	z = 0
 	while True:
 		if n > y:
 			if z == 0:
-				RString = str(x) + ' isn\'t divisible by ' + str(n)
-				return {"tag": "@DICT_RESPONSE~ $", "print": RString, "valid": False, "numbers": []}
+				return '@STRING_RESPONSE~ $' + str(x) + ' isn\'t divisible by ' + str(n)
 			else:
-				RString = str(z) + ', with a remainder of ' + str(y)
-				return {"tag": "@DICT_RESPONSE~ $", "print": RString, "valid": True, "numbers": [z, y]}
+				return (z, y)
 		y -= n
 		z += 1
 def factorial(x):
-	assert (x <= 150), '@STRING_RESPONSE~ $That result is too large to process, but it\'s essentially infinite.'
+	if x > 150:
+		return '@STRING_RESPONSE~ $That result is too large to process, but it\'s essentially infinite.'
 	n = 1
 	for i in range(1, x):
 		n = n * x

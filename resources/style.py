@@ -1,4 +1,4 @@
-class fore:
+class Fore:
 	red = '\u001b[31m'
 	black = '\u001b[30m'
 	green = '\u001b[32m'
@@ -17,7 +17,7 @@ class fore:
 	white = '\u001b[97m'
 	def rgb(r=0, g=0, b=0):
 		return '\u001b[38;2;' + str(r) + ';' + str(g) + ';' + str(b) + 'm'
-class back:
+class Back:
 	black = '\u001b[40m'
 	red = '\u001b[41m'
 	green = '\u001b[42m'
@@ -36,7 +36,7 @@ class back:
 	white = '\u001b[107m'
 	def rgb(r=0, g=0, b=0):
 		return '\u001b[48;2;' + str(r) + ';' + str(g) + ';' + str(b) + 'm'
-class formatting:
+class Formatting:
 	underline = '\u001b[4m'
 	bold = '\u001b[1m'
 	dim = '\u001b[2m'
@@ -44,5 +44,5 @@ class formatting:
 	blink = '\u001b[5m'
 	reverse = '\u001b[7m'
 	hidden = '\u001b[8m'
-class reset:
+class Reset:
 	styling = '\u001b[0m'
