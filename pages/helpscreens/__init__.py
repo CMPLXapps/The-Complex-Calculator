@@ -1,3 +1,4 @@
+#!usr/bin/env python3
 def all():
 	hashLine(2)
 	print(f'{hashFill}+----------------------------------------------------------------ESC to close--+{hashFill}')

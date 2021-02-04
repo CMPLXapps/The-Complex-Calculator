@@ -1,3 +1,4 @@
+#!usr/bin/env python3
 import math as M
 import random as R
 import stat as S

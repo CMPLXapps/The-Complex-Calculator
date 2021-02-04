@@ -1,3 +1,4 @@
+#!usr/bin/env python3
 import keyboard
 import sys
 sys.path.append('..')

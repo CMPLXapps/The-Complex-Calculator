@@ -1,12 +1,4 @@
-#!usr/bin/env python3
-import json
-with open('cfg/var.json', 'r') as file:
-	varDossier = json.load(file)
-varDossier_old = varDossier.copy()
-def updateVarDossier(*args, **kwargs):
-	global varDossier
-	varDossier = {'a': a.Value, 'b': b.Value, 'c': c.Value, 'd': d.Value, 'e': e.Value, 'f': f.Value}
-class FloatExtender:
+class Retype:
 	def __init__(self, *args, **kwargs):
 		self.Value = 0
 	def __call__(self, *args, **kwargs):
@@ -100,53 +92,3 @@ class FloatExtender:
 		return self.Value != other
 	def __ge__(self, other, *args, **kwargs):
 		return self.Value >= other
-class VAR_TEMPLATE(FloatExtender):
-	def __init__(self, Key, *args, **kwargs):
-		self.Key = Key
-		self.Value = float(varDossier[Key])
-	def __repr__(self, *args, **kwargs):
-		return f'Variable {self.Key.upper()}; {self.Value}'
-	@property
-	def set(self, newValue, *args, **kwargs):
-		try:
-			self.Value = float(newValue)
-			updateVarDossier()
-			return '@STRING_RESPONSE~ $Variable Set!'
-		except Exception as e:
-			return f'@STRING_RESPONSE~ $An error occurred while programming the variable:\n\n{e}'
-	@property
-	def save(self, *args, **kwargs):
-		return save_variables([self.Key, '0'])    # May return function object instead of return value
-	@property
-	def clear(self, *args, **kwargs):
-		self.Value = 0.0
-		updateVarDossier()
-		return '@STRING_RESPONSE~ $Variable Cleared!'
-	@property
-	def revert(self, *args, **kwargs):
-		try:
-			self.Value = float(varDossier_old[self.Key])
-			updateVarDossier()
-			return '@STRING_RESPONSE~ $Variable Reverted!'
-		except Exception as e:
-			return f'@STRING_RESPONSE~ $Variable could not be reverted;\n{e}'
-	def 
-def save_variables(include=['a', 'b', 'c', 'd', 'e', 'f', '0'], *args, **kwargs):
-	if not isinstance(include, list) and not isinstance(include, tuple) and not isinstance(include, str):
-		return '@STRING_RESPONSE~ $Invalid Parameters'
-	if isinstance(include, str):
-		include = [include, '0']
-	updateVarDossier()
-	for i in include:
-		if i == '0':
-			continue
-		varDossier_old[i] = varDossier[i]
-	with open('cfg/var.json', 'w') as file:
-		json.dump(varDossier_old, file, indent=4)
-	return '@STRING_RESPONSE~ $Saved!'
-a = VAR_TEMPLATE('a')
-b = VAR_TEMPLATE('b')
-c = VAR_TEMPLATE('c')
-d = VAR_TEMPLATE('d')
-e = VAR_TEMPLATE('e')
-f = VAR_TEMPLATE('f')
