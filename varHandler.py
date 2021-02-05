@@ -105,7 +105,7 @@ class VAR_TEMPLATE(FloatExtender):
 		self.Key = Key
 		self.Value = float(varDossier[Key])
 	def __repr__(self, *args, **kwargs):
-		return f'Variable {self.Key.upper()}; {self.Value}'
+		return f'Variable {self.Key.upper()}; {self.Value}' 
 	@property
 	def set(self, newValue, *args, **kwargs):
 		try:
@@ -130,7 +130,6 @@ class VAR_TEMPLATE(FloatExtender):
 			return '@STRING_RESPONSE~ $Variable Reverted!'
 		except Exception as e:
 			return f'@STRING_RESPONSE~ $Variable could not be reverted;\n{e}'
-	def 
 def save_variables(include=['a', 'b', 'c', 'd', 'e', 'f', '0'], *args, **kwargs):
 	if not isinstance(include, list) and not isinstance(include, tuple) and not isinstance(include, str):
 		return '@STRING_RESPONSE~ $Invalid Parameters'

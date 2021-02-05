@@ -15,11 +15,11 @@ class load:
 	def screen():
 		PT.clear()
 		print(f'{fore.lightyellow} ___          _                                                              _     _    '.center(terminalWidth))
-		print(f'{fore.lightyellow}| __|  _ _   | |_   ___   _ _     _  _   ___   _  _   _ _     _ __    __ _  | |_  | |_  '.center(terminalWidth))
-		print(f'{fore.lightyellow}| _|  | \' \\  |  _| / -_) | \'_|   | || | / _ \\ | || | | \'_|   | \'  \\  / _` | |  _| | \' \\ '.center(terminalWidth))
-		print(f'{fore.lightyellow}|___| |_||_|  \\__| \\___| |_|      \\_, | \\___/  \\_,_| |_|     |_|_|_| \\__,_|  \\__| |_||_|'.center(terminalWidth))
-		print(f'{fore.lightyellow}                                   |__/                                                  '.center(terminalWidth))
-		print(f'{fore.lightcyan}==Help==History==Graph==Back==Reload==Quit' + ('=' * (terminalWidth - 35)) + '(Type One)=='.center(terminalWidth) + fore.white)
+		print('| __|  _ _   | |_   ___   _ _     _  _   ___   _  _   _ _     _ __    __ _  | |_  | |_  '.center(terminalWidth))
+		print('| _|  | \' \\  |  _| / -_) | \'_|   | || | / _ \\ | || | | \'_|   | \'  \\  / _` | |  _| | \' \\ '.center(terminalWidth))
+		print('|___| |_||_|  \\__| \\___| |_|      \\_, | \\___/  \\_,_| |_|     |_|_|_| \\__,_|  \\__| |_||_|'.center(terminalWidth))
+		print('                                   |__/                                                  '.center(terminalWidth))
+		print(f'{fore.white}Press (ESC) for more options'.center(terminalWidth))
 	class help():
 		def all():
 			PT.clear()
