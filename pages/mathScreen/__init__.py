@@ -4,13 +4,50 @@ from INCLIMPORTS import *
 from HANDLERS import *
 import graphScreen
 #-------------------
+
 terminalWidth, terminalHeight = SH.get_terminal_size()
+
 hashFill = fore.darkgray + ('#' * (terminalHeight - 80) / 2) + fore.white
-#-------------------
+
 def hashLine(x):
 	for i in range(0, x):
-		print(fore.darkgray + ('#' * terminalWidth) + fore.white)
+		 return fore.darkgray + ('#' * terminalWidth) + fore.white
+
+class ColorFormattingParentClass:
+
+	def __init__(self):
+		self.colordict = {
+			'<yellow>': '\u001b[93m',
+			'<gray>': '\u001b[90m',
+			'<white>': '\u001b[97m',
+			'<reset>': '\u001b[0m'
+			'<hf>': hashFill,
+		}
+
+	def parseHashLine(self, string):
+		while True:
+			hashIndex = string.find('<hl')
+			if hashIndex != -1:
+				str_beg = string[:hashIndex]
+				str_end = string[string[hashIndex+1:].find('>')+1:]
+				workingSubStr = (string.replace('<hl', '@')[hashIndex+1:])
+				hashInt = workingSubStr[:workingSubStr.find('>')]
+				string = str_beg + hashLine()
+
+	def __call__(self, string):
+		for i in list(self.colordict.keys()):
+			string = string.replace(i, colordict[i])
+		return string
+
+def ReadAndCenter(fp, centerLength):
+	with open(fp, 'r') as readfile:
+		for i in readfile.readlines():
+			print(i.center(centerlength))
+
+CFormat = ColorFormattingParentClass()
+
 #-------------------
+
 class load:
 	def screen():
 		PT.clear()

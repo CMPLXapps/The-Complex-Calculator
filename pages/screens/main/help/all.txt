@@ -1,0 +1,36 @@
+<hf>+----------------------------------------------------------------ESC to close--+<hf>
+<hf>|<reset>    <   <white>All<reset>   Variables   Constants   Math   Statistics   Trigonometry   >    <white>|<hf>
+<hf>+--------------------------+---------------------------------------------------+<hf>
+<hf>|  Dealing with Variables  | Example: "a" to reference,                        |<hf>
+<hf>+--------------------------+          "edit_a or edita" to edit                |<hf>
+<hf>|  Functions for editing:    - set(value) --Sets the value                     |<hf>
+<hf>|                            - revert() --Reverts to old value                 |<hf>
+<hf>| sv, save_variables, svar   - clear() --Sets back to zero                     |<hf>
+<hf>|  to save all variables                (Variables are lettered a-f)           |<hf>
+<hf>+--------------------------+---------------------------------------------------+<hf>
+<hf>|        Constants         |     - pi or π                                     |<hf>
+<hf>+--------------------------+     - tau (2 x π)                                 |<hf>
+<hf>|                                - eul (Euler's Number, or e, don't use e,     |<hf>
+<hf>|                                          it's the name of one of the         |<hf>
+<hf>|                                            programmable variables.)          |<hf>
+<hf>+--------------------------+---------------------------------------------------+<hf>
+<hf>|       General Math       |                                                   |<hf>
+<hf>+--------------------------+                                                   |<hf>
+<hf>|Basic Math: x + y, x - y, x * y, x / y                                        |<hf>
+<hf>|Whole Division (quotient and remainder): x /& n or wdiv(x, n)                 |<hf>
+<hf>|Powers: exp(x, n), x ** n, x^n                                                |<hf>
+<hf>|Modulus (remainder): x % n                                                    |<hf>
+<hf>|Absolute Value: absv(), |x|                                                   |<hf>
+<hf>|Factorial: factorial(x), fact(x), !x                                          |<hf>
+<hf>|Square Root: sqrt(x)                                                          |<hf>
+<hf>|Cube Root: cbrt(x)                                                            |<hf>
+<hf>|Tesseract Root: tsrt(x)                                                       |<hf>
+<hf>|Nth Root: root(x, n)                                                          |<hf>
+<hf>|Logarithm: log(x) (Log Base 10), log(x, n) (Log Base N), ln(x) (Natural Log)  |<hf>
+<hf>+--------------------------+---------------------------------------------------+<hf>
+<hf>|        Statistics        |                                                   |<hf>
+<hf>+--------------------------+                                                   |<hf>
+<hf>+--------------------------+---------------------------------------------------+<hf>
+<hf>|       Trigonometry       |                                                   |<hf>
+<hf>+--------------------------+                                                   |<hf>
+<hf>+------------------------------------------------------------------------------+<hf>
