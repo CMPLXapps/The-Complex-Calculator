@@ -8,10 +8,6 @@ This project is only officially available for Linux and Windows, although, on Ma
 
 the OS-Ambiguous Source Code and run `The-Complex-Calculator.py` , and it will run properly and work just as well.
 
-## Dependencies:
-
-* Python 3 is required, download it <a href="https://www.python.org/downloads/" target="_blank">here</a>.
-
 ## Launching:
 
 Linux:
